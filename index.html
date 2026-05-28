@@ -1,14 +1,383 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026-05-25-bootcamp-rocket-landing-page</title>
+    <meta name="description" content="針對市場急需的前端、後端工程師與 UI 設計師職缺而設。">
+    <link rel="stylesheet" href="src/style.css">
+    <title>火箭隊</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+  <body class="tracking-base leading-primary">
+    <header class="flex justify-center py-2 font-bold [&>p]:px-4 [&>p]:py-3 text-neutral-700 whitespace-nowrap overflow-hidden">
+      <p>Let’s join</p>
+      <p>- 火箭隊培訓營 Rocket -</p>
+      <p>- 共同空間 Co-working space -</p>
+    </header>
+    <main>
+      <section class="bg-[url(/src/assets/banner/banner-bg.png)]">
+        <div class="flex md:hidden flex-col items-center py-15 gap-[46px]">
+          <div class="pr-10">
+            <div class="max-w-[294px] bg-neutral-white rounded-border-m border-2 border-neutral-300 relative">
+              <a href="#">
+                <div class="flex items-center mt-6">
+                  <img src="src/assets/banner/banner-logo-rocket-sm.svg" alt="Banner logo" class="ml-6 mr-2">
+                  <h1 class="m-0 leading-none font-bold text-mobile-h1 text-neutral-700 mt-[5px]">火箭隊</h1>
+                </div>
+                <h2 class="font-bold text-mobile-h4 text-neutral-500 ml-7 mt-2 mb-6 mr-[94px] whitespace-nowrap">Bootcamp Rocket</h2>
+                <img src="src/assets/banner/banner-btn-rocket-sm.svg" alt="Banner button" class="absolute -right-10 top-7">
+              </a>
+            </div>
+          </div>
+          <div class="pr-10">  
+            <div class="max-w-[294px] bg-neutral-white rounded-border-m border-2 border-neutral-300 relative">
+              <a href="#">
+                <div class="flex items-center mt-6">
+                  <img src="src/assets/banner/banner-logo-coworking-sm.svg" alt="Banner logo" class="ml-6 mr-2">
+                  <h2 class="m-0 leading-none font-bold text-mobile-h1 text-neutral-700 mt-[5px]">共同空間</h2>
+                </div>
+                <h2 class="font-bold text-mobile-h4 text-neutral-500 ml-7 mt-2 mb-6 mr-[94px] whitespace-nowrap">Co-working Space</h2>
+                <img src="src/assets/banner/banner-btn-coworking-sm.svg" alt="Banner button" class="absolute -right-10 top-7">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex pt-23 pb-25 justify-center items-center">
+          <div class="bg-neutral-white rounded-border-l border-2 border-neutral-300 max-w-110 max-h-112 w-full relative">
+            <a href="#" class="flex flex-col items-center">
+              <h1 class="font-bold text-desktop-h1 text-neutral-700 absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap">火箭隊</h1>
+              <h2 class="font-bold text-desktop-body1 text-neutral-500 pt-9 text-center">Bootcamp Rocket</h2>
+              <img src="src/assets/banner/banner-logo-rocket-lg.svg" alt="Rocket logo" class="max-w-31 mt-6 mb-4">
+              <div class="text-neutral-700 font-bold [&>p]:leading-others text-desktop-body2 flex flex-col items-center mb-[107px]">
+                <p># 軟體工程師培訓營</p>
+                <p># 全程免費的扎實訓練</p>
+                <p># 帶你翻轉人生！</p>
+              </div>
+              <img src="src/assets/banner/banner-btn-rocket-lg.svg" alt="Rocket button" class="absolute -bottom-15 left-1/2 -translate-x-1/2">
+            </a>
+          </div>
+          <span class="text-neutral-700 font-bold text-desktop-h1 self-center my-[34px] ml-[82px] mr-[83px] font-display">X</span>
+          <div class="bg-neutral-white rounded-border-l border-2 border-neutral-300 max-w-110 max-h-112 w-full relative hover:-translate-y-4 duration-500">
+            <a href="#" class="flex flex-col items-center">
+              <h2 class="font-bold text-desktop-h1 text-neutral-700 absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap">共同空間</h2>
+              <h2 class="font-bold text-desktop-body1 text-neutral-500 pt-9 text-center">Co-working Space</h2>
+              <img src="src/assets/banner/banner-logo-coworking-lg.svg" alt="Rocket logo" class="max-w-31 mt-6 mb-4">
+              <div class="text-neutral-700 font-bold [&>p]:leading-others text-desktop-body2 flex flex-col items-center mb-[107px]">
+                <p># 超 chill 的共同工作場域</p>
+                <p># 餅乾、零食、咖啡應有盡有</p>
+                <p># 等你來一同交流成長</p>
+              </div>
+              <img src="src/assets/banner/banner-btn-coworking-lg.svg" alt="Rocket button" class="absolute -bottom-15 left-1/2 -translate-x-1/2">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-rocket-100 rounded-border-xl px-12 py-9 md:flex md:max-h-[712px] justify-center md:py-15 m-auto md:justify-around md:gap-5">
+        <div class="text-neutral-700">
+            <h3 class="font-bold text-mobile-body3 md:text-desktop-body2">About Rocket</h3>
+            <h2 class="font-bold text-mobile-h1 md:text-desktop-h1">什麼是火箭隊</h2>
+            <div class="text-mobile-body3 md:text-desktop-body2 font-normal mt-4 mb-4 md:mt-10 md:max-w-[526px] flex flex-col gap-6 md:gap-[30px]">
+              <p>火箭隊位於高雄的工程師培訓營，針對市場急需的前端、後端工程師與 UI 設計師職缺而設。為期<span class="font-bold">七個月的免費課程</span>，學員全程參與，<span class="font-bold">僅需支付場地費</span>。</p>
+              <p>火箭隊培育具備問題解決能力的專業人才，滿足企業需求。透過教練的觀察與協助，學員將建立階段性目標，確保技能成長。加入火箭隊，您將獲得實戰經驗，迅速融入職場，並滿足市場對高品質工程師的渴求。</p>
+            </div>
+        </div>
+        <div class="flex flex-col gap-8 overflow-y-auto scrollbar-none">
+          <div class="flex flex-col md:flex-row self-start bg-neutral-white rounded-border-l md:max-w-[636px] w-full py-4 md:py-9 md:gap-26">
+            <div class="ml-5 md:ml-9 flex flex-col flex-1 justify-between gap-2 md:gap-3">
+              <h2 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">前端工程師</h2>
+              <ul class="font-bold flex items-center text-xs md:text-desktop-body3 gap-[10px] [&>li]:text-rocket-400 [&>li]:border-rocket-400 [&>li]:border-2 [&>li]:rounded-[20px] [&>li]:py-2 [&>li]:px-4 flex-wrap">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-500 mt-auto">Front-end engineer</h3>
+            </div>
+            <div class="max-w-full h-[60px] mt-34 mx-5 md:mt-0 md:ml-0 md:w-[169px] md:h-[208px] bg-neutral-200 rounded-border-l md:mr-9 relative">
+              <img src="src/assets/rocket-page/about/about-rocket-frontend.svg" alt="Front-end engineer image" class="md:max-w-[164px] absolute left-1/2 -translate-x-1/2 bottom-3 md:-left-1/4 md:bottom-6 md:translate-0">
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row self-start bg-neutral-white rounded-border-l md:max-w-[636px] w-full py-4 md:py-9 md:gap-26">
+            <div class="ml-5 md:ml-9 flex flex-col flex-1 justify-between gap-2 md:gap-3">
+              <h2 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">後端工程師</h2>
+              <ul class="font-bold flex items-center text-xs md:text-desktop-body3 gap-[10px] [&>li]:text-rocket-400 [&>li]:border-rocket-400 [&>li]:border-2 [&>li]:rounded-[20px] [&>li]:py-2 [&>li]:px-4 flex-wrap">
+                <li>C#</li>
+                <li>.Net</li>
+              </ul>
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-500 mt-auto">Back-end engineer</h3>
+            </div>
+            <div class="max-w-full h-[60px] mt-34 mx-5 md:mt-0 md:ml-0 md:w-[169px] md:h-[208px] bg-neutral-200 rounded-border-l md:mr-9 relative">
+              <img src="src/assets/rocket-page/about/about-rocket-backend.svg" alt="Back-end engineer image" class="md:max-w-[164px] absolute left-1/2 -translate-x-1/2 bottom-3 md:-left-1/4 md:bottom-6 md:translate-0">
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row self-start bg-neutral-white rounded-border-l md:max-w-[636px] w-full py-4 md:py-9 md:gap-26">
+            <div class="ml-5 md:ml-9 flex flex-col flex-1 justify-between gap-2 md:gap-3">
+              <h2 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">UI 設計師</h2>
+              <ul class="font-bold flex items-center text-xs md:text-desktop-body3 gap-[10px] [&>li]:text-rocket-400 [&>li]:border-rocket-400 [&>li]:border-2 [&>li]:rounded-[20px] [&>li]:py-2 [&>li]:px-4 flex-wrap">
+                <li>Figma</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-500 mt-auto">UI designer</h3>
+            </div>
+            <div class="max-w-full h-[60px] mt-34 mx-5 md:mt-0 md:ml-0 md:w-[169px] md:h-[208px] bg-neutral-200 rounded-border-l md:mr-9 relative">
+              <img src="src/assets/rocket-page/about/about-rocket-ui.svg" alt="UI designer image" class="md:max-w-[164px] absolute left-1/2 -translate-x-1/2 bottom-3 md:-left-1/4 md:bottom-6 md:translate-0">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col md:items-center mt-12 md:mt-23 mb-23 md:mb-30 gap-7 overflow-hidden">
+        <h2 class="font-bold text-mobile-h2 md:text-desktop-h2 text-neutral-700 m-auto">成功案例</h2>
+        <div class="grid grid-rows-2 grid-flow-col overflow-x-auto [&>img]:min-w-[240px] ml-12 md:ml-0 md:grid-cols-4 gap-x-6 gap-y-7 md:overflow-x-visible">
+          <img src="src/assets/rocket-page/case/case1.png" alt="Case 1">
+          <img src="src/assets/rocket-page/case/case2.png" alt="Case 2">
+          <img src="src/assets/rocket-page/case/case3.png" alt="Case 3">
+          <img src="src/assets/rocket-page/case/case4.png" alt="Case 4">
+          <img src="src/assets/rocket-page/case/case5.png" alt="Case 5">
+          <img src="src/assets/rocket-page/case/case6.png" alt="Case 6">
+          <img src="src/assets/rocket-page/case/case7.png" alt="Case 7">
+          <img src="src/assets/rocket-page/case/case8.png" alt="Case 8">
+        </div>
+      </section>
+      <section class="flex flex-col items-center bg-neutral-100 relative">
+        <h2 class="font-bold text-mobile-h2 md:text-desktop-h2 text-neutral-700 md-3 absolute -top-5">關於培訓</h2>
+        <div class="flex justify-between shadow-[0px_2px_4px_0px_#E8E8E8] px-5 py-2 md:py-3 rounded-[50px] mt-[38px] bg-neutral-white">
+          <div class="pr-3 border-r-2 border-neutral-200">
+            <p class="font-bold text-sm md:text-desktop-body3 text-neutral-700">近期梯次</p>
+          </div>
+          <p class="hidden md:block font-medium text-desktop-body3 text-neutral-700 pl-3">第十三梯 (2023/5/8~2023/11/30) 、第十四梯 (2023/7/31~2024/2/28)</p>
+          <p class="block md:hidden font-medium text-sm text-neutral-700 pl-3">第十三梯 (2023/5/8~2023/11/30)</p>
+        </div>
+        <div class="max-w-[1076px] w-full flex flex-col gap-20 mt-20">
+          <div class="w-full bg-[url(/src/assets/rocket-page/training/training-bg.png)] bg-neutral-white text-neutral-700 px-12 pb-[34px] pt-[50px] md:pt-16 md:pb-10 md:pr-20 md:pl-12 md:rounded-border-m border-neutral-200 border-2 relative">
+            <div class="inline-block border-2 border-neutral-700 rounded-border-s shadow-[4px_4px_0px_0px_#363636] bg-neutral-white px-5 md:px-10 py-3 absolute -top-8">
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-700">前端工程師</h3>
+            </div>
+            <div class="flex flex-col-reverse items-center gap-7 md:flex-row md:justify-between md:gap-12">
+              <div class="flex flex-col gap-8 md:gap-9 max-w-[618px]">
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">關於前端</h3>
+                  <p class="font-normal text-mobile-body3 md:text-desktop-body3">主要專精 JavaScript 前端 (65%)、後端 (35%) 開發，投入語言為 HTML、CSS、JavaScript，<span class="font-bold bg-[linear-gradient(to_top,var(--color-rocket-yellow)_50%,transparent_50%)]">適合有一些 HTML、CSS、JS 基礎的學員報名</span>。</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">應徵門檻</h3>
+                  <ol class="list-decimal list-inside [&>li]:pl-4 [&>li]:-indent-4 text-desktop-body3">
+                    <li>會用 CSS Flexbox 排過網頁，有 RWD 響應式網頁概念，需提交 CSS 切版作品，請<span class="font-bold bg-[linear-gradient(to_top,var(--color-rocket-yellow)_50%,transparent_50%)]">在履歷上需附網頁切版作品</span>，Codepen、GitHub Pages 皆可。</li>
+                    <li>了解 JS 變數、陣列物件、DOM、監聽、AJAX 等知識，尚未熟練也沒關係。</li>
+                  </ol>
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">你會學到</h3>
+                  <ol class="list-decimal list-inside [&>li]:pl-4 [&>li]:-indent-4 text-desktop-body3">
+                    <li>網頁切版技能：HTML5、CSS3、SCSS、Bootsrap5、TailwindCSS</li>
+                    <li>前端開發技能：JavaScript、TypeScript、ES6、SPA、JS plugin 整合、API 介接、NPM</li>
+                    <li>後端開發技能：Node.js、MongoDB、heroku、express、JWT</li>
+                    <li>JS 框架：React(Hooks)、Vue3，會依照未來你想投入的公司進行調整</li>
+                    <li>程式版控：Git、GitHub、Git Flow 工作流程</li>
+                  </ol>
+                </div>
+              </div>
+              <img src="src/assets/rocket-page/training/training-img-frontend-lg.svg" alt="Training image" class="max-w-[218px] md:max-w-[282px]">
+            </div>
+          </div>
+          <div class="w-full bg-[url(/src/assets/rocket-page/training/training-bg.png)] bg-neutral-white text-neutral-700 px-12 pb-[34px] pt-[50px] md:pt-16 md:pb-10 md:pr-20 md:pl-12 md:rounded-border-m border-neutral-200 border-2 relative">
+            <div class="inline-block border-2 border-neutral-700 rounded-border-s shadow-[4px_4px_0px_0px_#363636] bg-neutral-white px-5 md:px-10 py-3 absolute -top-8">
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-700">後端工程師</h3>
+            </div>
+            <div class="flex flex-col items-center gap-7 md:flex-row md:justify-between md:gap-12">
+              <img src="src/assets/rocket-page/training/training-img-backend-lg.svg" alt="Training image">
+              <div class="flex flex-col gap-9 max-w-[618px]">
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">關於後端</h3>
+                  <p class="hidden md:block font-normal text-desktop-body3">後端工程師組主要專注為後端開發，投入後端語言為<span class="font-bold bg-[linear-gradient(to_top,var(--color-rocket-yellow)_50%,transparent_50%)]"> C#、.Net，適合無程式背景的學員報名</span>。</p>
+                  <p class="block md:hidden font-normal text-desktop-body3">後端工程師組主要專注為後端開發，投入後端語言為 C#、.Net，<span class="font-bold bg-[linear-gradient(to_top,var(--color-rocket-yellow)_50%,transparent_50%)]">適合無程式背景的學員報名。</span></p>
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">你會學到</h3>
+                  <ol class="list-decimal list-inside [&>li]:pl-4 [&>li]:-indent-4">
+                    <li>後端語言：C#</li>
+                    <li>程式架構：<a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="underline">ASP.NET</a> Web Form、<a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="underline md:no-underline">ASP.NET</a> MVC、Web API</li>
+                    <li>資料庫與雲端主機：MSSQL、Microsoft Azure</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full bg-[url(/src/assets/rocket-page/training/training-bg.png)] bg-neutral-white text-neutral-700 px-12 pb-[34px] pt-[50px] md:pt-16 md:pb-10 md:pr-20 md:pl-12 md:rounded-border-m border-neutral-200 border-2 relative">
+            <div class="inline-block border-2 border-neutral-700 rounded-border-s shadow-[4px_4px_0px_0px_#363636] bg-neutral-white px-5 md:px-10 py-3 absolute -top-8">
+              <h3 class="font-bold text-mobile-body1 md:text-desktop-body1 text-neutral-700">UI 設計師</h3>
+            </div>
+            <div class="flex flex-col-reverse items-center gap-7 md:flex-row md:justify-between md:gap-12">
+              <div class="flex flex-col gap-9 max-w-[618px]">
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">關於設計</h3>
+                  <p class="font-normal text-desktop-body3">主要以網頁 UI 設計 50%、網頁前端 50% 的雙技能樹養成，<span class="font-bold bg-[linear-gradient(to_top,var(--color-rocket-yellow)_50%,transparent_50%)]">適合具備視覺背景，操作過繪圖軟體尤佳，歡迎無工作經驗的學員報名</span>。</p>
+                </div>
+                <div class="flex flex-col gap-5">
+                  <h3 class="font-bold border-neutral-700 text-mobile-body2 md:text-desktop-body2 border-b-3 self-start">你會學到</h3>
+                  <ol class="list-decimal list-inside [&>li]:pl-4 [&>li]:-indent-4">
+                    <li>網頁前置規劃：Logic Flow、Wireframe、網格系統、使用者體驗</li>
+                    <li>介面繪製流程：Figma 操作、Mockup、Prototype、標註文件</li>
+                    <li>網頁切版技能：HTML5、CSS、Bootstrap5</li>
+                  </ol>
+                </div>
+              </div>
+              <img src="src/assets/rocket-page/training/training-img-ui-lg.svg" alt="Training image">
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 mb-[66px] pl-[49px] md:pl-0 md:mt-16 md:mb-32">
+          <h2 class="font-bold text-neutral-700 text-mobile-h3 md:text-desktop-h3">教練團</h2>
+          <div class="flex gap-6 mb-7">
+            <a href="#"><img src="src/assets/rocket-page/coach/coach-weijie.svg" alt="Weijie photo"></a>
+            <a href="#"><img src="src/assets/rocket-page/coach/coach-yinmin.svg" alt="Yinmin photo"></a>
+            <a href="#"><img src="src/assets/rocket-page/coach/coach-justin.svg" alt="Justin photo"></a>
+            <a href="#"><img src="src/assets/rocket-page/coach/coach-casper.svg" alt="Casper photo"></a>
+          </div>
+          <h3 class="font-bold text-mobile-h4 md:text-desktop-body1 mb-3">前端教練 | 廖洧杰</h3>
+          <ul class="list-disc list-inside font-normal text-desktop-body3 text-neutral-700 [&>li]:pl-4 [&>li]:-indent-4">
+            <li>2016-2022 過往經歷：<a href="https://www.hexschool.com/" target="_blank" class="underline">六角學院校長</a>、<a href="https://www.facebook.com/profile.php?id=100039975056467#" target="_blank" class="underline">高雄火箭隊</a>前端教練</li>
+            <li>2013-2019 成功案例：協助無資訊背景轉職工程師人數超過 500 位</li>
+            <li>2013-2019 授課人數：線上+線下授課學員超過 25,000 位</li>
+            <li>2014-2019 線下授課：<a href="https://www.im.nuk.edu.tw/?page_id=95" target="_blank" class="underline">高雄大學前端領域兼任講師</a></li>
+            <li>2007-2019 實務經驗：經手超過 100 個實際專案，其領域不乏中小企業、政府專案、銀行系統</li>
+          </ul>
+        </div>
+        <a href="#" class="max-w-[332px] md:max-w-[1076px] w-full bg-rocket-100 flex justify-center rounded-border-m border-2 border-neutral-700 absolute -bottom-11 py-5 md:py-6 group relative">
+          <h3 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">馬上報名！</h3>
+          <img src="src/assets/rocket-page/ic-go-rocket.svg" alt="Go button logo" class="hidden group-hover:block absolute right-10 bottom-2 md:right-1/3 md:bottom-4">
+        </a>
+      </section>
+      <section class="flex flex-col items-center gap-12 pl-[49px] pr-[47px] mt-[90px] md:pl-0 md:pr-0 md:gap-15 md:mt-32 text-neutral-700">
+        <div>
+          <h3 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">培訓費用</h3>
+          <div class="max-w-[856px]">
+            <div class="flex gap-8 p-5 border-t-2 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.1-lg.svg" alt="No.1 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：請問參加培訓需要費用嗎？</p>
+                <p class="font-medium text-desktop-body3">A：不會有任何費用，僅需要場地費 ( $1,200 / Month )，其餘完全免費。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.2-lg.svg" alt="No.2 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：你們不是直銷吧？</p>
+                <p class="font-medium text-desktop-body3">A：不是，不會推銷任何東西。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.3-lg.svg" alt="No.3 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：你們真的不是詐騙集團？台灣有其他單位做一樣的事了嗎？</p>
+                <p class="font-medium text-desktop-body3">A：其實在台灣已經有許多單位在做一樣的事了，但絕大部分都在中北部，例如 <a href="https://aiworks.tw/" class="underline" target="_blank">AppWorks School</a>、<a href="https://www.programmer101.org/" class="underline" target="_blank">CMoney</a>，以及在台南的<a href="https://www.facebook.com/GoodideasStudio/" class="underline" target="_blank">好想工作室</a>。一樣也是提供<span class="font-bold">免費培訓</span>。而在高雄上，我們是第一個單位舉辦此培訓營。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-bold text-mobile-h3 md:text-desktop-h3 text-neutral-700">培訓流程</h3>
+          <div class="max-w-[856px]">
+            <div class="flex gap-8 p-5 border-t-2 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.1-lg.svg" alt="No.1 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：那培訓的時間是多久呢？</p>
+                <p class="font-normal text-desktop-body3">A：培訓時間為七個月，您可以選擇要投入前端工程師、後端工程師或 UI 設計師。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.2-lg.svg" alt="No.2 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：那如果七個月後，可以續留嗎？</p>
+                <p class="font-normal text-desktop-body3">A：當然可以，我們提供額外的進駐空間供您使用。在這裡，您可以與其他火箭隊夥伴保持緊密交流，分享心得，或者利用此空間接案和進行遠端工作，讓您的技能不斷精進。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.3-lg.svg" alt="No.3 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：你們和其他的培訓單位有什麼差異呢？</p>
+                <p class="font-normal text-desktop-body3">A：我們的培訓流程，主要是將學員培育成<span class="font-bold">「擁有自我解決問題的工程師」</span>，大部分的實體補習班都會給您一個完整課綱，您照著它走完就結束。但是不論任何工作，出社會才會發現，有很多事情都還是自己不懂的，您必須<span class="font-bold">了解該如何找出問題癥結點，並解決問題</span>。讓您有足夠的搜索與研究能力，自行打造火箭，航向您想去的星球。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.4-lg.svg" alt="No.4 logo" class="self-start w-5 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：這麼說來，你們沒有一個完整課綱？</p>
+                <p class="font-normal text-desktop-body3">A：是的，我們只會針對您當下的狀態，並觀察您需要什麼養分，提供給您<span class="font-bold">「目標」</span>，您再依照此目標去達成，而我們也會從您研究的過程中，觀察您還需要哪些技術，以達到其目標。舉例來說，您對 web layout 沒有從零到有的開發經驗，那教練就陪您跑過整個流程，甚至模擬自己是業主，與您討論網站建構流程。或是後端您沒有自己架過郵件伺服器，那教練就會給您建立一個最小可行性的郵件服務，以達成目標。</p>
+              </div>
+            </div>
+            <div class="flex gap-8 p-5 border-b-2 border-neutral-200">
+              <img src="src/assets/rocket-page/ic-number/ic-no.5-lg.svg" alt="No.5 logo" class="self-start w-5 md:w-6 md:w-6">
+              <div class="flex flex-col gap-2">
+                <p class="font-bold text-desktop-body3">Q：所以有很多的時間都是在自我研究技術？</p>
+                <p class="font-normal text-desktop-body3">A：是的，沒有錯，教練的存在是觀察您目前的狀態，並與您共同建立各階段性的目標，確保您方向沒有走歪，能順遂朝自己的方向邁進。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex flex-col bg-neutral-200 text-neutral-700 pl-18 relative mt-19 md:mt-31">
+        <h3 class="font-bold text-mobile-h3 md:text-desktop-h3 absolute -top-3 md:-top-5">主辦、協辦單位</h3>
+        <ul class="flex justify-start overflow-x-auto gap-6 pt-9 pb-4 md:pt-14 md:pb-10">
+          <li>
+            <div class="bg-neutral-white rounded-border-m px-12 py-6 flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-rocket-lg-2x.png" alt="Rocket image" class="max-w-[100px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">主辦單位</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">火箭隊</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m pt-[55px] pb-[55.5px] px-[38px] flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-hexschool-lg-2x.png" alt="Hexschool image" class="max-w-[120px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">協辦單位</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">六角學院</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m px-12 py-6 flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-goodidea-lg-2x.png" alt="Good idea image" class="max-w-[100px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">協辦單位</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">好想工作室</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m px-[18px] py-[34px] flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-kdan-lg-2x.png" alt="Kdan image" class="max-w-[160px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">合作招募廠商</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">凱鈿科技</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m px-12 pt-[32px] pb-[32.11px] flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-titan-lg-2x.png" alt="Titan image" class="max-w-[100px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">合作招募廠商</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">鈦坦科技</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m px-12 py-6 flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-skw-lg-2x.png" alt="SKW image" class="max-w-[100px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">合作招募廠商</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">坂和企業</p>
+          </li>
+          <li>
+            <div class="bg-neutral-white rounded-border-m pt-[59px] pb-[59.9px] px-[23px] flex items-center justify-center">
+              <img src="src/assets/rocket-page/organizer/organizer-wistron-lg-2x.png" alt="Wistron image" class="max-w-[150px]">
+            </div>
+            <h4 class="font-bold text-sm md:text-desktop-body3 mt-4">合作招募廠商</h4>
+            <p class="font-medium text-sm md:text-desktop-body3 mt-1">緯創資通</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class=" hidden md:block text-desktop-body3 text-neutral-700 font-normal flex justify-self-center items-center">
+        <p class="pt-9 pb-9">Copyright © 2023 - Created by <span class="font-display">六角學院 / 火箭隊培訓營</span></p>
+      </div>
+      <div class="flex md:hidden flex-col text-neutral-700 justify-self-center items-center pt-5 pb-5">
+        <p>Copyright © 2023</p>
+        <p>Created by 六角學院 / 火箭隊培訓營</p>
+      </div>
+    </footer>
   </body>
 </html>
