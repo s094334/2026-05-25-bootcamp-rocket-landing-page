@@ -6,7 +6,7 @@ export default defineConfig({
         rolldownOptions: {
             input: {
                 main: resolve(import.meta.dirname, 'index.html'),
-                space: resolve(import.meta.dirname, 'space.html'),
+                space: resolve(import.meta.dirname, 'space/index.html'),
             },
         },
     },
